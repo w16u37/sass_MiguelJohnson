@@ -1,6 +1,3 @@
-/* @media only screen and (min-width: 0px)
-and (max-width: 767px) { */
-
 * {
     margin: 0;
     padding: 0;
@@ -12,17 +9,13 @@ and (max-width: 767px) { */
         "nav"
         "medioi"
         "mediod"
-        "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 120px 130px auto auto 180px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+        "footer";   
 }
 
 .header { 
     grid-area: header;
     display: flex;
-    width: 100vw;    
+    justify-content: center;
 }
 
 .headerImg {
@@ -34,11 +27,31 @@ and (max-width: 767px) { */
 .nav { 
     grid-area: nav;
     display: flex;
-    width: 100vw;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
     background-color: black;    
 }
 
-.nav ul, .redesFooter, .tarjetasFooter,
+.nav ul {
+    display: flex;
+    flex-flow: row wrap;    
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.nav ul li {
+    padding: 10px 10px;
+    list-style: none;  
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.redesFooter, .tarjetasFooter,
 .cuerpoServicios__option {
     display: flex;
     flex-flow: row wrap;
@@ -47,13 +60,13 @@ and (max-width: 767px) { */
     align-content: stretch;
 }
 
-.nav ul li, .redesFooter li, .tarjetasFooter li,
+.redesFooter li, .tarjetasFooter li,
 .cuerpoServicios__option li{
     padding: 10px 10px;
     list-style: none;    
 }
 
-.nav ul li a, .redesFooter li a, .tarjetasFooter li a {
+.redesFooter li a, .tarjetasFooter li a {
     color: white;
     text-decoration: none;    
 }
@@ -76,13 +89,25 @@ and (max-width: 767px) { */
 }
 
 .medioiAbajo__caja {
+    display: flex;
+    flex-flow: column nowrap;
     text-align: center;    
     border: 2px solid black;
     margin-bottom: 3px;
+    padding: 10px;    
+    justify-content: center;
+    width: 90%;
 }
 
-.img__Index1, .img__Index2 {
-    width: 90vw;
+.img__Index {
+    width: 90%;
+    height: 270px;
+}
+
+.img__Index1, .img__Index2, 
+.img__Index3, .img__Index4,
+.img__Index5 {
+    width: 100%;
     align-items: center;
 }
   
@@ -93,27 +118,79 @@ and (max-width: 767px) { */
     justify-content: center;
 }
 
-.mediod__Arriba, .medioi__Arriba,
-.usuarioUno__orden, .parrafoServicios,
-.cardParrafo {
+.mediod__Arriba{
+    width: 90%;
+    padding: 1rem;
+}
+
+.usuarioUno__orden{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.parrafoServicios {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 90%;
+    padding: 1rem;
+    text-align: justify;
+    align-items: center;
+}
+
+.medioi__Arriba, .cardParrafo {
     padding: 1rem;    
 }
 
 .mediodArriba__parrafo, .medioiArriba__parrafo,
-.usuarioUno__orden, .parrafoServicios,
 .cardParrafo {
     text-align: justify;
 }
 
 .mediod__Abajo {
-    padding-bottom: 50px;
+    display: flex;
+    flex-flow: column nowrap;    
+    padding-bottom: 20px;
     font-size: 40px;
+    width: 90%;    
+    align-items: center;    
 }
 
-.quienes__mediod, .cuerpoServicios, .contactoUser {
+.ifra{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.cuerpoServicios {
+    display: flex;
+    flex-flow: column nowrap;    
+}
+
+.quienes__mediod, .contactoUser {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+.cuerpoDiseños__subtitulo {
+    text-align: center;
+}
+
+.cuerpoAbajo__figuras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cuerpoAbajo__subtitulo {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 .btn__Medio {
@@ -121,10 +198,32 @@ and (max-width: 767px) { */
     font-size: 30px;
     background-color: black;
     color: white;
+    margin-bottom: 2px;
+}
+
+.cuerpoServicios__subtitulo {
+    text-align: center;
+}
+
+.ser {
+    padding: 10px 10px;
+    margin: 10px 5px;
 }
 
 .iconosQuienes {
     display: flex;
+    flex-flow: row wrap;     
+}
+
+.ico {
+    padding: 5px 30px;
+}
+
+.usuarioUno {
+    display: flex;
+    flex-flow: row nowrap;    
+    align-items: center;
+    padding: 10px 0px;
 }
 
 .footer { 
@@ -134,8 +233,14 @@ and (max-width: 767px) { */
     align-items: center;
 }
 
+.usuarioUno__img{
+    width: 90px;
+    height: 90px;
+    padding-right: 5px;
+}
+
 .redesFooter__img, .iconosQuienes__img, 
-.usuarioUno__img, .cuerpoServicios__option--img,
+.cuerpoServicios__option--img,
 .tableImg, .contactoImg {    
     width: 30px;
     height: 30px;
@@ -162,13 +267,22 @@ and (max-width: 767px) { */
     margin-left: 2rem;
 }
 
-/*/Aqui empieza el responsive/*/
-@media screen and (min-width: 1024px) {
-    .grilla {  display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 120px 130px auto auto 180px;
-        gap: 0px 0px;
-        grid-auto-flow: row;
+.carru2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.botonesCompra {
+    display: flex;
+    flex-flow: row wrap;
+    width: 91%;
+}
+
+
+/*/Aqui empieza el responsive 600/*/
+@media (min-width: 600px) {
+    .grilla {  display: grid;        
         grid-template-areas:
           "header header"
           "nav nav"
@@ -176,61 +290,95 @@ and (max-width: 767px) { */
           "medioi mediod"
           "footer footer";
       }
-      
-      .header { grid-area: header; justify-content: center; }
-      
 
-      .nav { grid-area: nav; justify-content: center;
-        align-items: center;}
+      .cuerpoServicios {
+        flex-flow: column nowrap;
+        align-content: center; 
+        align-items: center; 
+        font-size: 40px;
+    }
 
-        .nav ul { align-items: center;
-        }
-      
-      .medioi {  display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
+.tablePaquetes__General {
+    text-align: center;
+}
+
+.tableImg {
+    width: 60px; height: 70px;
+}
+
+}
+
+/*/Aqui empieza el responsive 1024/*/
+@media (min-width: 1024px) {
+    .grilla {  display: grid;        
         grid-template-areas:
-          "medioi__Arriba"
-          "medioi__Abajo";
-        grid-area: medioi;
-        
+          "header header header"
+          "nav nav nav"
+          "medioi medioi mediod"
+          "medioi medioi mediod"
+          "footer footer footer";
       }
-      
-      .cuerpoServicios { flex-flow: column nowrap;
-    align-content: center; align-items: center; 
-    font-size: 40px;}
-      .medioi__Arriba { grid-area: medioi__Arriba; }
-      .img__Index1 { width: 550px; height: 270px; }
-      .img__Index2 { width: 50px; height: 80px; }
-      .tableImg { width: 70px; height: 80px;}
-      .medioi__Abajo { grid-area: medioi__Abajo; }
-      .medioi__Abajo { display: flex; flex-direction: column; }
-      .cuerpoAbajo__figuras { display: flex; 
-        flex-flow: row nowrap;}
-    .medioiAbajo__caja { display: flex; flex-flow: column wrap;
-    justify-content: flex-end;}
-    .tablePaquetes__General { text-align: center;}
-
-      .mediod {  display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "mediod__Arriba"
-          "mediod__Abajo";
-        grid-area: mediod;
-      }
-      
-      .mediod__Arriba { grid-area: mediod__Arriba; 
         
-    }      
+.nav ul li a:hover {
+    background: white; 
+    color: blue; padding: 30px 20px;
+}
+      
+.cuerpoServicios {
+    flex-flow: column nowrap;
+    align-content: center; 
+    align-items: center; 
+    font-size: 40px;
+}
 
-      .mediod__Abajo { grid-area: mediod__Abajo; }
-      
-      .footer { grid-area: footer; }
-      
-    
+.carru2 {
+    width: 90%;
+}
+
+.img__Index1 {
+    width: 550px;
+    height: 270px;
+}
+
+.img__Index1:hover {
+    transform: scale(1.3);
+}
+
+.img__Index2 {
+    width: 50px; height: 80px;
+}
+
+.tableImg {
+    width: 70px; height: 80px;
+}
+
+.medioi__Abajo {
+    display: flex; flex-direction: column;
+}
+
+.cuerpoAbajo__figuras {
+    display: flex; 
+    flex-flow: row nowrap;
+}
+
+.medioiAbajo__caja {
+    display: flex; 
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
+.tablePaquetes__General {
+    text-align: center;
+}
+
+.contactoText {
+    height: 40px;
+    width: 500px;
+    transition: all 2s;}
+
+.contactoText:focus {
+    height: 50px;
+    width: 600px;
+    border-color: blue;
+}
 }
