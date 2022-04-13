@@ -381,4 +381,80 @@
     width: 600px;
     border-color: blue;
 }
+
+@keyframes btn {    
+    50%{background-color: white;
+    color: black;}    
+    100%{background-color: blue;
+    color: white;}
+}
+
+.animabtn {
+    animation-name: btn;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+.animaParr {
+    animation-duration: 2s;
+    animation-name: aparece;
+    animation-iteration-count: 3s;
+}
+
+@keyframes aparece {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.animaCaja:hover {
+    background-color: rgba(0, 255, 55, 1);
+    transform: scale(1.1);
+}
+
+.medioi {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.text:focus {
+    height: 40px;
+    width: 300px;    
+}
+
+.iconosQuienes__img:hover {
+    height: 40px;
+    width: 40px;
+}
+
+.usuarioUno:hover {
+    background-color: rgba(51, 70, 255, 0.1);
+    transform: scale(1.1);
+}
+
+.anim:hover {
+    background-color: rgba(51, 255, 190, 0.2);
+    transform: scale(1.1);
+    color: black;
+}
+
+.large:hover {    
+    transform: scale(1.2);
+    color: black;
+}
+
+.cardParrafo {
+    font-size: 30px;
+}
+
+.medioiAbajo__caja:hover {
+    background-color: rgba(255, 206, 51, 1);
+    transform: scale(1.05);
+}
+
+.nav, .footer {
+    background-image: linear-gradient(to left, blue, black);
+}
+
 }
