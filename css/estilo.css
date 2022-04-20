@@ -1,0 +1,95 @@
+.animaCaja:hover {
+  background-color: rgba(64, 74, 214, 0.2);
+  transform: scale(1.1);
+}
+
+.c1 {
+  height: 250px;
+}
+
+.carru1 {
+  height: 500px;
+  width: 100px;
+}
+
+.gra {
+  background-image: linear-gradient(to left, blue, black);
+}
+
+* {
+  font-family: "Lobster", cursive;
+}
+
+h3 {
+  font-size: 24px;
+  border-bottom: 1px solid #9e9e9e;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.pa {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.icnavs {
+  font-size: 30px;
+  color: white;
+}
+.icnavs:hover {
+  color: rgb(76, 218, 236);
+}
+
+.redesFooter, .tarjetasFooter {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: stretch;
+}
+
+.redesFooter li {
+  padding: 10px 10px;
+  list-style: none;
+}
+.redesFooter li a {
+  color: white;
+  text-decoration: none;
+}
+
+.tarjetasFooter li {
+  padding: 10px 10px;
+  list-style: none;
+}
+.tarjetasFooter li a {
+  color: white;
+  text-decoration: none;
+}
+
+.redesFooter__img {
+  height: 30px;
+  width: 30px;
+}
+
+.casa {
+  font-size: 50px;
+}
+.casa:hover {
+  color: rgb(76, 218, 236);
+}
+
+.h {
+  width: 100%;
+}
+
+.ic {
+  height: 25px;
+  width: 25px;
+}
+
+.ch {
+  height: 25px;
+  width: 25px;
+}
+
+/*# sourceMappingURL=estilo.css.map */

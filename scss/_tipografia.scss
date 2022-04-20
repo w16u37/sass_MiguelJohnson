@@ -1,0 +1,16 @@
+* {
+    font-family: $fondo-letra;
+}
+
+h3 {
+    font-size: $tam-letra24;
+    border-bottom: $borde_parrafo;
+    padding-bottom: $padding-parrafo;
+    margin-bottom: $margen-parrafo;
+}
+
+// Modificando el tamaño de letra del parrafo
+.pa {
+    font-size: $tam-letra16;
+    text-align: $alinea-texto;
+}

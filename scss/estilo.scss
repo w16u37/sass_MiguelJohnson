@@ -1,0 +1,76 @@
+@import "variables";
+@import "animaciones";
+@import "imagenes";
+@import "tipografia";
+
+// Iconos del Nav
+.icnavs {
+    font-size: $tam-letra30;
+    color: $color-blanco;
+        &:hover {
+        color: $color-navs;    
+    }
+}
+
+// Redes y Tarjetas del footer
+.redesFooter, .tarjetasFooter {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.redesFooter {
+    li {
+        padding: 10px 10px;
+        list-style: none;
+        a {
+            color: white;
+            text-decoration: none; 
+        }
+    }        
+}
+
+.tarjetasFooter {
+    li {
+        padding: 10px 10px;
+        list-style: none; 
+        a {
+            color: white;
+            text-decoration: none; 
+        }   
+    }
+}
+
+.redesFooter__img {
+    height: 30px;
+    width: 30px;
+}
+
+// Modificando el tamaño y hover de la casa del nav
+.casa {
+    font-size: 50px;
+    &:hover {
+        color: $color-navs;
+    }
+}
+
+// Modificando tamaño del header
+.h {
+    width: 100%;
+}
+
+.ic {
+    height: 25px;
+    width: 25px;
+}
+
+// Modificando tamaño de los iconos de la tabla
+.ch {
+    height: 25px;
+    width: 25px;
+}
+
+
+
