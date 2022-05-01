@@ -1,4 +1,6 @@
 @import "variables";
+@import "extends";
+@import "mixins";
 @import "animaciones";
 @import "imagenes";
 @import "tipografia";
@@ -13,42 +15,22 @@
 }
 
 // Redes y Tarjetas del footer
-.redesFooter, .tarjetasFooter {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: center;
-    align-content: stretch;
-}
-
 .redesFooter {
+    @include caja-flex();
     li {
         padding: 10px 10px;
         list-style: none;
         a {
             color: white;
             text-decoration: none; 
+            .redesFooter__img {
+                @include ancho-alto(30px, 30px)
+            }
         }
     }        
 }
 
-.tarjetasFooter {
-    li {
-        padding: 10px 10px;
-        list-style: none; 
-        a {
-            color: white;
-            text-decoration: none; 
-        }   
-    }
-}
-
-.redesFooter__img {
-    height: 30px;
-    width: 30px;
-}
-
-// Modificando el tamaño y hover de la casa del nav
+// Modificando el tamaño y hover del navegador
 .casa {
     font-size: 50px;
     &:hover {
@@ -56,21 +38,17 @@
     }
 }
 
-// Modificando tamaño del header
+// Modificando tamaño del logo header
 .h {
     width: 100%;
 }
 
 .ic {
-    height: 25px;
-    width: 25px;
+    height: calc($ancho-50 / 2);
+    width: calc($ancho-50 / 2);
 }
 
-// Modificando tamaño de los iconos de la tabla
-.ch {
-    height: 25px;
-    width: 25px;
-}
+
 
 
 

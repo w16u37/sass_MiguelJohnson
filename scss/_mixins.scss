@@ -1,0 +1,13 @@
+// Ejemplos de mixins
+@mixin ancho-alto($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin caja-flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: stretch;
+}

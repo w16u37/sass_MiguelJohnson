@@ -1,0 +1,8 @@
+.tarjetasFooter {
+    @extend .redesFooter;
+}
+
+// Modificando tamaño de los iconos de la tabla
+.ch {
+    @extend .ic;
+}

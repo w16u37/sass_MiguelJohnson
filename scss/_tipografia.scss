@@ -14,3 +14,10 @@ h3 {
     font-size: $tam-letra16;
     text-align: $alinea-texto;
 }
+
+h1 {
+    border-bottom: $borde_parrafo;
+    padding-bottom: $padding-parrafo;
+    margin-bottom: $margen-parrafo;
+    text-align: center;
+}
