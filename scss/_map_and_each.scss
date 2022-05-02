@@ -1,0 +1,13 @@
+// Aplicando MAP and EACH
+$colors: (
+ comprar: #55acee,
+ enviar:  #3a5795,
+ solicitar: #C25E30,
+ volver: #C25E30
+);
+
+@each $name-color, $bgcolor in $colors {
+    .btn-#{$name-color} {
+        background-color: $bgcolor;
+    }
+ }
