@@ -11,3 +11,10 @@
     justify-content: center;
     align-content: stretch;
 }
+
+@mixin tipogra {        
+    border-bottom: $borde_parrafo;
+    padding-bottom: $padding-parrafo;
+    margin-bottom: $margen-parrafo; 
+    text-align: center;
+}

@@ -1,12 +1,11 @@
 * {
     font-family: $fondo-letra;
+    text-align: justify;
 }
 
 h3 {
+    @include tipogra();
     font-size: $tam-letra24;
-    border-bottom: $borde_parrafo;
-    padding-bottom: $padding-parrafo;
-    margin-bottom: $margen-parrafo;
 }
 
 // Modificando el tamaño de letra del parrafo
@@ -16,8 +15,5 @@ h3 {
 }
 
 h1 {
-    border-bottom: $borde_parrafo;
-    padding-bottom: $padding-parrafo;
-    margin-bottom: $margen-parrafo;
-    text-align: center;
+    @include tipogra();
 }
