@@ -53,3 +53,15 @@
 .listas li {
     padding-top: 15px;
 }
+
+.grbotones {
+    margin-left: 15px;
+}
+
+// Al reducir pantalla vamos hacer responsive con los botones del nav
+@media (max-width: 992px) {
+    .grbotones {
+        padding-top: 25px;
+        padding-left: 1px;
+    }
+}

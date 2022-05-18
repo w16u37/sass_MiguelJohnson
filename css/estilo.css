@@ -1,6 +1,6 @@
 .animaCaja:hover {
   background-color: rgba(64, 74, 214, 0.2);
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 .c1 {
@@ -119,6 +119,17 @@ h1 {
 
 .listas li {
   padding-top: 15px;
+}
+
+.grbotones {
+  margin-left: 15px;
+}
+
+@media (max-width: 992px) {
+  .grbotones {
+    padding-top: 25px;
+    padding-left: 1px;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

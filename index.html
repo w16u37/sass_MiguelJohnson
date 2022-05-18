@@ -35,16 +35,19 @@
 </head>
 <body>
 
-  <div class="row h">
-    <div class="col-lg-12 text-center">
-        <a href="index.html">
-            <img class="headerImg" src="img/logo_header.png" alt="logo_empresa">
-        </a>
-    </div>    
+  
+<div class="row h">
+  <div class="col-12 text-center">
+    <a href="index.html">
+      <img class="headerImg" src="img/logo_header.png" alt="logo_empresa">
+    </a>
+  </div>    
 </div>
 
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid">
+<div class="row">
+  <div class="col-12">    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><i class="bi bi-house-fill casa"></i></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -69,116 +72,145 @@
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
+          <button class="btn btn-primary" type="submit">Buscar</button>
         </form>
           
-          <!-- Iconos nav -->
-          <div>                    
-            <i class="bi bi-share-fill icnavs"></i>
-            <i class="bi bi-cart-fill icnavs"></i>
-            <i class="bi bi-person-fill icnavs"></i>
+          <!-- Grupo de botones -->
+          <div class="btn-group grbotones">
+            <button type="button" class="btn btn-primary">
+              <i class="bi bi-share"></i>
+              <span class="visually-hidden">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Botón</font>
+                </font>
+              </span>
+            </button>
+
+            <button type="button" class="btn btn-primary">
+              <i class="bi bi-cart"></i>
+              <span class="visually-hidden">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Botón</font>
+                </font>
+              </span>
+            </button>
+
+            <button type="button" class="btn btn-primary">
+              <i class="bi bi-person"></i>
+              <span class="visually-hidden">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Botón</font>
+                </font>
+              </span>
+            </button>
           </div>
 
+        </div>
       </div>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">Bienvenidos a Luminus</h1>
     </div>
-  </nav>
-
-          <div class="container">
-            <h1>Bienvenidos a Luminus</h1>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="img/elearning.webp" class="d-block w-100 carru1" alt="diseño_learning">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>e-Learning</h5>
-                              <p>Haz con nosotros que las clases sean dinamicas y entretenidas..</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <img src="img/ecommerce.jpg" class="d-block w-100 carru1" alt="diseño_commerce">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>e-Commerce</h5>
-                              <p>Te acompañamos en tu emprendimiento, con los mejores tips de SEO..</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/ehealth.jpg" class="d-block w-100 carru1" alt="diseño_health">
-                            <div class="carousel-caption d-none d-md-block">
-                              <h5>e-Health</h5>
-                              <p>Gestiona toda la información de tu clínica desde cualquier dispositivo..</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Siguiente</span>
-                        </button>
-                      </div>
-                </div>
+  
+    <div class="col-12">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/elearning.webp" class="d-block w-100 carru1" alt="diseño_learning">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-center">e-Learning</h5>
+              <p class="text-center">Haz con nosotros que las clases sean dinamicas y entretenidas..</p>
             </div>
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h3>Descripción de cada producto..</h3>
-                    <p class="pa"><strong>e-Learning:</strong><br> Es el uso de la tecnología de redes para diseñar, entregar, seleccionar, gestionar y ampliar el <a href="index.html">aprendizaje</a>.</p><br>
-                    <p class="pa"><strong>e-Commerce:</strong><br> El <a href="index.html">comercio electrónico</a>, es un sistema de compra y venta de productos o servicios que se realiza exclusivamente a través de Internet. Se refiere a las transacciones entre compradores y vendedores mediante una plataforma online que gestiona los cobros y los pagos de manera completamente electrónica.</p><br>
-                    <p class="pa"><strong>e-Health:</strong><br> Se define como el uso de las tecnologías de la información y la comunicación de forma segura y rentable en todos los campos que tienen que ver con la <a href="index.html">salud</a>.</p>
-
-                </div>
-                <div class="col-lg-6">
-                    
-                    <div>
-                      <h3>Drive Luminus..</h3>
-                      <p class="pa"><strong>DriveLu:</strong><br><a href="index.html">DriveLu</a> es un servicio de almacenamiento de archivos en la nube, donde podrás escoger además tu capacidad o ir aumentandolo según tus necesidades.</p><br>
-                    </div>
-                    
-                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                        <option selected>Selecciona la capacidad..</option>
-                        <option value="1">100 GB</option>
-                        <option value="2">200 GB</option>
-                        <option value="3">1 TB</option>
-                      </select>
-                      
-                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                        <option selected>Selecciona tu plan..</option>
-                        <option value="1">ANUAL</option>
-                        <option value="2">SEMESTRAL</option>
-                        <option value="3">TRIMESTRAL</option>
-                      </select>
-                      <div class="d-grid gap-2">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Agregar Dominio
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Agregar Dominio y Hosting
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Por ahora no
-                        </label>
-                      </div>
-                      <button class="btn btn-primary" type="button">Agregar al carrito de compras..</button>
-                </div>
-                </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/ecommerce2.jpg" class="d-block w-100 carru1" alt="diseño_commerce">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-center">e-Commerce</h5>
+              <p class="text-center">Te acompañamos en tu emprendimiento, con los mejores tips de SEO..</p>
             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/ehealth2.webp" class="d-block w-100 carru1" alt="diseño_health">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-center">e-Health</h5>
+              <p class="text-center">Gestiona toda la información de tu clínica desde cualquier dispositivo..</p>
+            </div>
+          </div>
+        </div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Anterior</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Siguiente</span>
+</button>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <h3>Descripción de cada producto..</h3>
+    <p class="pa"><strong>e-Learning:</strong><br> Es el uso de la tecnología de redes para diseñar, entregar, seleccionar, gestionar y ampliar el <a href="index.html">aprendizaje</a>.</p><br>
+    <p class="pa"><strong>e-Commerce:</strong><br> El <a href="index.html">comercio electrónico</a>, es un sistema de compra y venta de productos o servicios que se realiza exclusivamente a través de Internet. Se refiere a las transacciones entre compradores y vendedores mediante una plataforma online que gestiona los cobros y los pagos de manera completamente electrónica.</p><br>
+    <p class="pa"><strong>e-Health:</strong><br> Se define como el uso de las tecnologías de la información y la comunicación de forma segura y rentable en todos los campos que tienen que ver con la <a href="index.html">salud</a>.</p>
+</div>
+
+<div class="col-12 col-lg-6">             
+  <h3>Drive Luminus..</h3>
+  <p class="pa"><strong>DriveLu:</strong><br><a href="index.html">DriveLu</a> es un servicio de almacenamiento de archivos en la nube, donde podrás escoger además tu capacidad o ir aumentandolo según tus necesidades.</p><br>
+
+
+  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+    <option selected>Selecciona la capacidad..</option>
+    <option value="1">100 GB</option>
+    <option value="2">200 GB</option>
+    <option value="3">1 TB</option>
+  </select>
+
+  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+    <option selected>Selecciona tu plan..</option>
+    <option value="1">ANUAL</option>
+    <option value="2">SEMESTRAL</option>
+    <option value="3">TRIMESTRAL</option>
+  </select>
+
+  <div class="d-grid gap-2">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+      Agregar Dominio
+      </label>
+    </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+    <label class="form-check-label" for="flexRadioDefault1">
+    Agregar Dominio y Hosting
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+    Por ahora no
+    </label>
+  </div>
+<button class="btn btn-primary" type="button">Agregar al carrito de compras..</button>
+</div>
+</div>
+</div>
 
             <div class="row">
                 <div class="row">
@@ -225,7 +257,7 @@
 
         <footer class="footer">
           <div class="card text-center">
-              <div class="card-header">
+              <div class="card-header text-center">
                 Todos los derechos reservados
               </div>
               <div class="card-body gra">
@@ -270,10 +302,13 @@
               <a href="index.html"><img class="redesFooter__img" src="img/american-express.png" alt="ico_tae"></a> 
           </li>
       </ul>
-
-                <a href="index.html" class="btn btn-primary">Volver al inicio</a>
+      <div class="text-center">
+        <a href="index.html" class="btn btn-primary">Volver al inicio</a>
+      </div>
+      
+                
               </div>
-              <div class="card-footer text-muted">
+              <div class="card-footer text-muted text-center">
                 Copyright © 2022, Luminus by Miguel Johnson
               </div>
             </div>            

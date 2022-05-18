@@ -1,6 +1,6 @@
 * {
     font-family: $fondo-letra;
-    text-align: justify;
+    text-align: justify;    
 }
 
 h3 {
@@ -17,3 +17,5 @@ h3 {
 h1 {
     @include tipogra();
 }
+
+
