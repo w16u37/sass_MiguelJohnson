@@ -57,6 +57,40 @@ while (codigo == codigoG) {
 // Llamando a la función
 validar();
 
+// Declaración de array
+const registroV = [];
+let cantidad = 3;
+
+// Cargamos los nombres a través de un array
+do {
+    let nombres = prompt("Ingresa tus nombres:");
+    registroV.push(nombres.toUpperCase());
+    console.log(registroV.length);
+} while (registroV.length != cantidad)
+    // Agregamos dos registros
+    const nuevoRegistro = registroV.concat(["MARIA LUISA","JOSE MIGUEL"]);
+    // Salida de salto de línea usando Join
+    alert("Los usuarios registrados son:\n" + nuevoRegistro.join("\n"));
+
+
+// Insertamos una clase
+// class Usuario {
+//     constructor (nombres, apellidos, correo){
+//         this.nombres = nombres.toUpperCase();
+//         this.apellidos = apellidos.toUpperCase();
+//         this.correo = correo.toLowerCase();
+//     }
+// }
+
+// Insertando un Array
+// const registro = [];
+// registro.push(new Usuario());
+// registro.push(new Usuario());
+// registro.push(new Usuario());
+
+// Imprimimos el Array
+// alert(registroV);
+
 
 
 
